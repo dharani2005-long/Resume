@@ -1,0 +1,165 @@
+%-------------------------------------------------------------------------------
+% Dharani N - Software Engineer 
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+% ---------- Page geometry ----------
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.45in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ---------- Section formatting ----------
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+% ---------- Custom commands ----------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% ---------- HEADING ----------
+\begin{center}
+    {\Huge \scshape Dharani N} \\ \vspace{5pt}
+    \small
+    Erode, Tamil Nadu, India \\ \vspace{2pt}
+    6381443466 \quad $\diamond$ \quad
+    \href{mailto:dharanin3466@gmail.com}{dharanin3466@gmail.com} \\ \vspace{2pt}
+    \href{https://www.linkedin.com/in/dharani-n-717432269}{linkedin.com/in/dharani-n} \quad $\diamond$ \quad
+    \href{https://github.com/dharani2005-long}{github.com/dharani2005-long}
+\end{center}
+
+% ---------- SUMMARY ----------
+\section{Summary}
+\small{Aspiring Software Engineer with a strong foundation in Java, Object-Oriented Programming, Data Structures, and full-stack web development. Skilled in building backend applications and REST APIs using Spring Boot, Hibernate, JDBC, and SQL. Passionate about problem solving and writing clean, maintainable, and scalable code.}
+\vspace{-4pt}
+
+% ---------- SKILLS ----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming Languages}: Java, C, SQL \\ \vspace{2pt}
+    \textbf{Web Technologies}: HTML, CSS, JavaScript, Bootstrap \\ \vspace{2pt}
+    \textbf{Frameworks \& Libraries}: Spring, Spring Boot, Hibernate, JDBC \\ \vspace{2pt}
+    \textbf{Databases}: SQL, MySQL \\ \vspace{2pt}
+    \textbf{Tools \& Platforms}: Git, GitHub, REST APIs \\ \vspace{2pt}
+    \textbf{Concepts}: Data Structures, OOPS, DBMS, Web Security (OWASP)
+  }}
+\end{itemize}
+\vspace{-12pt}
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {K.S.R. College of Engineering}{Erode, Tamil Nadu}
+    {B.E. Mechanical Engineering --- CGPA: 7.8 / 10}{2021 -- 2025}
+  \resumeSubheading
+    {Government Hr. Sec. School, Minnapalayam}{Tamil Nadu}
+    {Class XII, State Board --- 63.8\% \quad | \quad Class X, State Board --- 60\%}{}
+\resumeSubHeadingListEnd
+
+% ---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Smart Parking Management System} $|$ \emph{Java, Spring Boot, Hibernate, JDBC, MySQL, REST API}}{}
+    \resumeItemListStart
+      \resumeItem{Built a full-stack smart parking application using \textbf{Spring Boot}, \textbf{Hibernate ORM}, and \textbf{MySQL} that tracks real-time slot availability and lets users search and book parking slots, with a responsive front-end in HTML, CSS, and JavaScript.}
+      \resumeItem{Designed \textbf{RESTful APIs} for slot allocation, booking, and CRUD operations, and used JDBC and Hibernate for efficient, transaction-safe database access.}
+      \resumeItem{Implemented role-based authentication (Admin / User), automated slot-release logic, and server-side input validation following OWASP security best practices.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Smart Inventory Prediction System} $|$ \emph{Java, Spring Boot, Hibernate, JDBC, MySQL, REST API}}{}
+    \resumeItemListStart
+      \resumeItem{Developed a full-stack inventory management application with \textbf{Spring Boot} REST APIs, \textbf{Hibernate}, and a \textbf{MySQL} database to track stock levels, sales, and supplier records.}
+      \resumeItem{Implemented demand-prediction and automated reorder logic that analyzes historical usage to forecast low-stock items and trigger restock alerts.}
+      \resumeItem{Built CRUD operations, role-based access control, and an interactive dashboard using HTML, CSS, and JavaScript to visualize inventory trends.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Personal Portfolio Website} $|$ \emph{HTML, CSS, JavaScript, Bootstrap}}{\href{https://dharani2005-long.github.io/Personal-Portfolio-Dharani-N/Portfolio}{Live Demo}}
+    \resumeItemListStart
+      \resumeItem{Designed and developed a responsive personal portfolio website to showcase projects, skills, and achievements across multiple screen sizes.}
+      \resumeItem{Deployed the website on \textbf{GitHub Pages} for public access.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ---------- EXPERIENCE ----------
+\section{Internship}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {SAN Technovation}{July 2024}
+    {Design Intern}{}
+    \resumeItemListStart
+      \resumeItem{Worked with AutoCAD and Creo for 2D drafting and part modeling, strengthening analytical and structured problem-solving skills.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ---------- CERTIFICATIONS ----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \small{\item{
+    \textbf{Introduction to HTML \& CSS} --- GUVI \\ \vspace{2pt}
+    \textbf{Rapid Manufacturing} --- NPTEL
+  }}
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+% ---------- ACHIEVEMENTS ----------
+\section{Achievements \& Activities}
+\begin{itemize}[leftmargin=0.2in, itemsep=-2pt]
+  \small
+  \item 4-Star rating in C Programming on HackerRank.
+  \item Solved multiple Data Structures \& Algorithms problems on LeetCode using Java.
+  \item Participated in the Smart India Hackathon (SIH) and presented a technical paper at an inter-college event.
+\end{itemize}
+
+\end{document}
